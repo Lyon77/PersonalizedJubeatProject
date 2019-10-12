@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
                 Instantiate(box, new Vector3(i * distance + distance / 2, j * distance + distance / 2), Quaternion.identity);
             }
         }
-    }
+    }   
 
     // Update is called once per frame
     void Update()
