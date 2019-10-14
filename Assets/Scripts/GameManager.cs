@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public AudioSource music;
     private bool stopped;
 
+    public static AudioClip currentSong;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,14 +35,15 @@ public class GameManager : MonoBehaviour
         }
 
         music = GetComponent<AudioSource>();
-        StartCoroutine("PlayMusic", 10);
+        music.clip = currentSong;
+        StartCoroutine("PlayMusic", 3);
         Debug.Log("Music Starts in 3 Seconds");
 
         stopped = false;
     }
 
     IEnumerator PlayMusic(float Count) {
-        yield return new WaitForSeconds(Count); //Count is the amount of time in seconds that you want to wait.
+        yield return new WaitForSeconds(Count); 
 
         //PlayDelayed() didn't work
         music.Play();
