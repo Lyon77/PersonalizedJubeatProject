@@ -217,8 +217,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8a9bb5e26276e44b066f1f6d60d0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 7110457018338941957, guid: 5b6a70b4eeea76b4ca100e081241b7f5, type: 3}
+  box: {fileID: 7530118903210758829, guid: d86979f94763c7a4591182f3c5c8d799, type: 3}
+  cubes: []
   music: {fileID: 0}
+  timeTillNoteAnimationEnds: 0
+  score: 0
+  missed: 0
 --- !u!82 &1268434863
 AudioSource:
   m_ObjectHideFlags: 0
@@ -389,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031007016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 0, z: 0}
+  m_LocalPosition: {x: -0.9, y: 0, z: 3.92}
   m_LocalScale: {x: 0.92, y: 0.92, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

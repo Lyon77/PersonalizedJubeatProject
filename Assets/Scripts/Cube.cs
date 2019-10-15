@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
+    public bool isActive;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isActive = false;
     }
 
     // Update is called once per frame
@@ -17,6 +18,9 @@ public class Cube : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        Debug.Log("Clicked");
+        if (isActive)
+            Debug.Log("Clicked while Active");
+        else
+            Debug.Log("Clicked while Inactive");
     }
 }
